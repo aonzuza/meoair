@@ -10,15 +10,17 @@
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
     <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+      <li class="nav-item {{Request::is('oxy') ? 'active' : ''}}">
+        <a class="nav-link" href="{{asset('oxy')}}">Oxy'z</a>
+      </li>
+      
       <li class="nav-item {{Request::is('meo') ? 'active' : ''}}">
         <a class="nav-link" href="{{asset('meo')}}">Meo</a>
       </li>
       <li class="nav-item {{Request::is('biolux') ? 'active' : ''}}">
         <a class="nav-link" href="{{asset('biolux')}}">Biolux</a>
       </li>
-      <li class="nav-item {{Request::is('oxy') ? 'active' : ''}}">
-        <a class="nav-link" href="{{asset('oxy')}}">Oxy'z</a>
-      </li>
+
       <li class="nav-item {{Request::is('experience') ? 'active' : ''}}">
         <a class="nav-link" href="{{asset('experience')}}">Experience</a>
       </li>

@@ -8,8 +8,9 @@
         <!-- row 1 -->
           <div class="col-3 offset-2 col-md-2 offset-md-0">
 
+
               <div class="footer-link-wrapper">
-                  <a href="{{asset('meo')}}">Meo</a>
+                  <a href="{{asset('oxy')}}">Oxy'z</a>
               </div>
 
 
@@ -24,7 +25,7 @@
           <div class="col-3 col-md-2">
 
             <div class="footer-link-wrapper">
-                <a href="{{asset('oxy')}}">Oxy'z</a>
+                <a href="{{asset('meo')}}">Meo</a>
             </div>
 
           </div>

@@ -1,0 +1,139 @@
+body{
+  font-family: 'Kanit', sans-serif;
+  font-weight: 300;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+h2{
+    font-size: 1.1rem;
+}
+p{
+    font-size: 0.9rem;
+}
+
+
+#admin-topbar{
+  background-color: #ff9c9c;
+}
+#admin-topbar a{
+  color: white;
+  text-transform: uppercase;
+}
+
+/*  sale page */
+#tool-area{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.btn-item-template{
+
+  margin-bottom: 10px;
+  background-color: #ba9870;
+  color:white;
+
+}
+
+.sale-header-template{
+  text-align: center;
+}
+.sales-col-wrapper{
+  margin-top: 30px;
+}
+.function-wrapper{
+  text-align: center;
+}
+.function-wrapper button{
+  margin-right: 20px;
+}
+
+.mycontainer:hover{
+  /* background-color: red; */
+  cursor: pointer;
+}
+/* .mycontainer:nth-child(even){
+  background-color: #f6f6f6;
+}
+
+.mycontainer:nth-child(odd){
+  background-color: yellow;
+} */
+/* --------- sales---------- */
+.sales-index-wrapper{
+  padding-top: 20px;
+}
+.sales-page-table{
+    width: 100%;
+    margin: auto;
+    /* border: solid black 1px; */
+    color:#ba9870;
+}
+.sales-page-table tr:nth-child(even){
+  background-color: #fff0d7;
+
+}
+.sales-page-table tr:nth-child(odd){
+  background-color: #fff7e9;
+  /* color:#444444; */
+}
+
+.sales-page-table th{
+    /* text-align: center; */
+    background-color: #ffd78c;
+    color:white;
+    padding: 10px 10px;
+    font-weight: normal;
+}
+.sales-page-table td{
+    /* text-align: center; */
+    padding: 10px 10px;
+    font-weight: 300;
+
+}
+
+.sales-page-table tr th:nth-child(3),
+.sales-page-table tr th:nth-child(4){
+    display: none;
+}
+.sales-page-table tr td:nth-child(3),
+.sales-page-table tr td:nth-child(4){
+    display: none;
+}
+.sale-page-button-link:hover{
+  text-decoration: none;
+}
+.sales-page-table button{
+  background-color: white;
+}
+
+/* sale edit */
+.sale-edit-wrapper{
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+#edit-area{
+
+
+    min-height: 400px;
+    background-color: #f9f9f9;
+    width: 100%;
+    margin: auto;
+    border-radius: 8px;
+
+    padding-top: 10px;
+    padding-bottom:  30px;
+    /* outline: 3px dashed #aaaaaa;
+    outline-offset: -30px;
+
+    padding-top: 40px;
+    padding-bottom:  50px; */
+}
+.sale-edit-title{
+  font-size: 2rem;
+}
+
+.social-icon-wrapper a{
+  margin-right: 8px;
+}

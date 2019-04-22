@@ -18,7 +18,8 @@
 
 
     <!-- Google Font  -->
-    <link href="https://fonts.googleapis.com/css?family=Prompt:300,400,500,700" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Prompt:300,400,500,700" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Kanit:300,400,500,700" rel="stylesheet">
 
 
     <!-- web styles -->
@@ -26,13 +27,14 @@
     <link rel="stylesheet" href="{{ asset('styles/responsivestyle.css') }}" >
 
 
-
+    @yield('style')
   </head>
   <body>
     @include('inc.topbar')
 
+    <div class="page-wrapper">
     @yield('content')
-
+    </div>
 
 
 <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
@@ -44,6 +46,17 @@
 
     <script type="text/javascript">
 
+          $(window).ready(function(){
+
+
+              $('#btn-scrolltotop').click(function(){
+
+                $("html, body").animate({ scrollTop: 0 }, "slow");
+
+              });
+
+          });
+
 
 
     </script>
@@ -52,5 +65,7 @@
   </body>
 
   @include('inc.footer')
+
+  @include('inc.scrolltotop')
 
 </html>
