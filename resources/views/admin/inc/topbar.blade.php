@@ -19,7 +19,7 @@
 
 
       <li class="nav-item {{Request::is('admin/posts') ? 'active' : ''}}">
-        <a class="nav-link" href="{{asset('experience')}}">Posts</a>
+        <a class="nav-link" href="{{asset('experience')}}">Experience</a>
       </li>
 
 

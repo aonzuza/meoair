@@ -54,12 +54,12 @@ Route::get('contact', function () {
 //====================== sales page =========================================
 Route::get('/admin/sales', 'SalesController@index');
 Route::post('api/admin/sales/create', 'SalesController@create');
-// Route::post('/admin/sales/store', 'SalesController@store');
+
 Route::post('api/admin/sales/store', 'SalesController@store');
+Route::post('api/admin/sales/store/temp', 'SalesController@storeTemp');
 
-// Route::get('/admin/sales/show/{salespageID}', 'SalesController@show');
 Route::get('/sales/show/{salespageID}', 'SalesController@show');
-
+Route::get('/sales/show/temp/{salespageID}', 'SalesController@showTemp');
 
 Route::get('/admin/sales/{salespageID}/edit', 'SalesController@edit');
 // delete a sale page

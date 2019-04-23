@@ -54,8 +54,25 @@ class SalesController extends Controller
         $body   = $request['body'];
 
         $sale = Salepage::find($pageID);
-        // $sale->title = $title;
+
         $sale->body = $body;
+
+        $response = $sale->save();
+
+        return response()->json($response);
+
+
+    }
+    public function storeTemp(Request $request)
+    {
+        //
+        $pageID = $request['pageID'];
+
+        $body   = $request['body'];
+
+        $sale = Salepage::find($pageID);
+
+        $sale->tempBody = $body;
 
         $response = $sale->save();
 
@@ -73,7 +90,13 @@ class SalesController extends Controller
     public function show($pageID)
     {
         $sale = Salepage::find($pageID);
-        return view('salesShow')->with('sale',$sale);
+        return view('salesShow')->with('html',$sale->body);
+    }
+    public function showTemp($pageID)
+    {
+      $sale = Salepage::find($pageID);
+      return view('salesShow')->with('html',$sale->tempBody);
+
     }
 
     /**
