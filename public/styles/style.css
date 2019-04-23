@@ -1,0 +1,191 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Prompt', sans-serif;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+h2{
+    font-size: 1.1rem;
+}
+p{
+    font-size: 0.9rem;
+}
+
+.page-wrapper{
+  padding-bottom: 30px;
+}
+
+.bg-red{
+  background-color: red;
+}
+.bg-green{
+  background-color: green;
+}
+.bg-blue{
+  background-color: blue;
+}
+.bg-yellow{
+  background-color: yellow;
+}
+
+
+
+
+.myboxShadow{
+	-o-box-shadow: 5px 5px 10px -5px rgba(145,145,145,1);
+	-webkit-box-shadow: 5px 5px 10px -5px rgba(145,145,145,1);
+	-moz-box-shadow: 5px 5px 10px -5px rgba(145,145,145,1);
+	box-shadow: 5px 5px 10px -5px rgba(145,145,145,1);
+}
+
+
+#topbar{
+  border-bottom: solid grey 1px;
+}
+
+
+#footer{
+  background-color: white;
+  border-top:solid black 2px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.footer-wrapper{
+  color:black;
+  padding-top: 15px;
+}
+.footer-link-wrapper{
+  padding: 5px 0px;
+  /* background-color: red; */
+}
+.footer-link-wrapper a{
+    color:black;
+}
+.footer-icon-wrapper{
+  /* background-color: red; */
+  padding: 15px 0px;
+}
+.footer-icon-wrapper a{
+  color:grey;
+  margin-left: 8px;
+}
+.footer-icon-wrapper a:hover{
+  text-decoration: none;
+  color:black;
+}
+
+/*  scroll to top */
+#btn-scrolltotop{
+  position:fixed;
+  bottom: 20px;
+  left:  50%;
+  width:32px;
+  height: 32px;
+}
+
+
+/*=================== home============================  */
+
+.home-sm-image-wrapper{
+  width: 100%;
+  height: auto;
+  /* max-width: 200px;
+  max-height: 200px; */
+  /* background-color: red; */
+  padding-top: 0px;
+  padding-bottom: 30px;
+}
+
+.home-first-text-wrapper{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.home-first-text-wrapper ul{
+  padding-left: 16px;
+}
+.home-first-text-wrapper h2{
+  font-size: 1.1rem;
+}
+.home-first-text-wrapper p{
+  font-size: 0.9rem;
+}
+.home-first-text-wrapper ul li{
+  font-size: 0.9rem;
+}
+
+/*=================== end home============================  */
+
+
+/*=======================meo===================  */
+.meo-second-row-wrapper{
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.meo-second-col-text-wrapper{
+  padding-top: 30px;
+}
+.meo-mask-text-wrapper{
+  padding-top:20px;
+}
+
+/*===================oxy============================== */
+.oxy-page-wrapper{
+  /* padding-top: 50px; */
+  padding-bottom: 30px;
+}
+.oxy-page-wrapper h2{
+  font-size: 1.1rem;
+}
+.oxy-page-wrapper p{
+  font-size: 0.9em;
+}
+.oxy-first-row-txt-wrapper{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.oxy-row-header-wrapper{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.oxy-row-wrapper{
+  padding-bottom: 40px;
+}
+.oxy-col-txt-wrapper{
+  padding-top: 40px;
+}
+.row-oxy-header-wrapper{
+  padding-bottom: 40px;
+}
+/*===================end oxy=============================*/
+
+/*=====================bio lux=======================  */
+.biolux-row-img-wrapper{
+  /* margin-bottom: 30px; */
+}
+.biolux-row-text-wrapper{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.biolux-row-btn{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*=====================bio lux research =======================  */
+.biolux-research-header{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.biolux-research-row-text-wrapper{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.biolux-research-row-btn{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}

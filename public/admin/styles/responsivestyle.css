@@ -1,0 +1,56 @@
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query since this is the default in Bootstrap */
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+  .sales-page-table tr th:nth-child(3)
+  {
+      display: table-cell;
+  }
+  .sales-page-table tr td:nth-child(3)
+  {
+      display: table-cell;
+  }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+.btn-item-template{
+    font-size: 0.8rem;
+}
+
+.sales-page-table tr th:nth-child(4)
+{
+    display: table-cell;
+}
+.sales-page-table tr td:nth-child(4)
+{
+    display: table-cell;
+}
+
+
+}
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+  .btn-item-template{
+      font-size: 0.9rem;
+  }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+  .btn-item-template{
+      font-size: 1.1rem;
+  }
+
+
+ }

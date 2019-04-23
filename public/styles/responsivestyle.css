@@ -1,0 +1,77 @@
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query since this is the default in Bootstrap */
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+  h2{
+      font-size: 1.2rem;
+  }
+  p{
+      font-size: 1rem;
+  }
+
+  .home-first-text-wrapper ul li{
+    font-size: 1rem;
+  }
+  .biolux-row-text-wrapper{
+    margin-top: 40px;
+  }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+  .footer-wrapper{
+    max-width: 700px;
+    /* background-color: red; */
+  }
+  .footer-link-wrapper{
+      /* background-color: red; */
+      text-align: center;
+  }
+
+}
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+  .page-wrapper{
+    padding-bottom:50px;
+  }
+
+    /* .home-first-text-wrapper h2{
+      font-size: 1.3rem;
+    }
+    .home-first-text-wrapper p{
+      font-size: 1.1rem;
+    } */
+    .home-first-text-wrapper ul li{
+      font-size: 1.1rem;
+    }
+    h2{
+        font-size: 1.3rem;
+    }
+    p{
+        font-size: 1.1rem;
+    }
+
+  .biolux-row-text-wrapper{
+    margin-top: 70px;
+  }
+    /* .oxy-page-wrapper h2{
+      font-size: 1.3rem;
+    }
+    .oxy-page-wrapper p{
+      font-size: 1.1rem;
+    } */
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+ }
