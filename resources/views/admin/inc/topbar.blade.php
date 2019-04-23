@@ -18,11 +18,29 @@
       </li>
 
 
-      <li class="nav-item {{Request::is('admin/posts') ? 'active' : ''}}">
-        <a class="nav-link" href="{{asset('experience')}}">Experience</a>
+      <li class="nav-item {{Request::is('admin/experience') ? 'active' : ''}}">
+        <a class="nav-link" href="{{asset('admin/experience')}}">Experience</a>
       </li>
 
 
+
+
+
+      @if (!Auth::guest())
+
+  <li class="nav-item">
+      <a class="nav-link active text-uppercase" title="logout" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
+            {{ Auth::user()->name }}
+      </a>
+      <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+            {{ csrf_field() }}
+      </form>
+  </li>
+    @else
+    <li class="nav-item {{Request::is('admin/login') ? 'active' : ''}}">
+      <a class="nav-link" href="{{asset('admin/login')}}">LOGIN</a>
+    </li>
+    @endif
 
     </ul>
 

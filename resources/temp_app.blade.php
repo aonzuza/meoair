@@ -35,11 +35,7 @@
   <body>
     @include('admin.inc.topbar')
 
-
-<div class="admin-page-wrapper">
     @yield('content')
-</div>
-
 
 
 
