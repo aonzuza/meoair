@@ -92,10 +92,18 @@
 <div class="container">
   <div class="row">
 
-    <div class="col-10 offset-1 col-md-2 offset-md-8">
+    <div class="col-10 offset-1 col-md-2 offset-md-6">
 
       <button type="button" class="btn btn-block btn-success" onclick="saveSalePage()">
         Save
+      </button>
+
+    </div>
+
+    <div class="col-10 offset-1 col-md-2 offset-md-0">
+
+      <button type="button" class="btn btn-block btn-info" onclick="previewSalePage()">
+        Preview
       </button>
 
     </div>
@@ -576,8 +584,22 @@ function deleteContainer(self){
 }
 
 
+function previewSalePage(){
+
+  var html = $('#edit-area').html();
+  var pageID = {{$sale->pageID }};
+  $.post( "{{asset('api/admin/sales/store/temp')}}", {
+                      pageID: pageID
+                    , body : html,
+        }).done(function(response){
+
+          var link = '{{asset('sales/show/temp')}}' + '/' + pageID;
+          window.open(link, '_blank');
+
+        });
 
 
+}
 
 function saveSalePage(){
 
