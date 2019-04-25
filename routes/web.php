@@ -36,9 +36,7 @@ Route::get('biolux-research', function () {
 Route::get('oxy', function () {
     return view('oxy');
 });
-Route::get('experience', function () {
-    return view('experience');
-});
+Route::get('experience', 'ExperienceController@index');
 Route::get('blogs', function () {
     return view('blogs');
 });
