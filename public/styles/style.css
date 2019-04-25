@@ -189,3 +189,19 @@ p{
   margin-top: 30px;
   margin-bottom: 30px;
 }
+
+/*================experince===================  */
+.experience-page-wrapper{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #fbfbfb;
+}
+.experince-card-wrapper{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.experince-card-image-wrapper{
+
+}
+.experince-card-image-wrapper img{
+}

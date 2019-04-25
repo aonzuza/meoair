@@ -45,20 +45,11 @@
     @yield('script')
 
     <script type="text/javascript">
-
           $(window).ready(function(){
-
-
               $('#btn-scrolltotop').click(function(){
-
                 $("html, body").animate({ scrollTop: 0 }, "slow");
-
               });
-
           });
-
-
-
     </script>
 
 
